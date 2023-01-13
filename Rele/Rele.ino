@@ -1,9 +1,19 @@
+#define rele 2
+#define touch 3
+
 void setup() {
-  // put your setup code here, to run once:
+  pinMode(rele, OUTPUT);
+  pinMode(touch, INPUT);
+  
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  
+  if (digitalRead(touch) == HIGH) {
+    digitalWrite(rele, HIGH);
+    } else {
+    digitalWrite(rele, LOW);
+      }
+  delay(500);
 }
