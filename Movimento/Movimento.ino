@@ -6,7 +6,7 @@ void setup() {
   pinMode(sensor, INPUT);
   pinMode(13, OUTPUT);
 
-  Serialegin(9600);
+  Serial.begin(9600);
 }
 
 void loop() {
